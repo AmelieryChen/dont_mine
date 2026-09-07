@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don’t Mine the Moana — Deep-sea mining and American Samoa</title>
+  <meta name="description" content="An educational briefing on why proposed deep-sea mining off American Samoa threatens Samoan culture, the tuna economy, and largely unexplored ocean ecosystems. Sources cited throughout.">
+  <meta property="og:title" content="Don’t Mine the Moana — Deep-sea mining and American Samoa">
+  <meta property="og:description" content="The U.S. is advancing the first commercial deep-sea mining lease sale in American waters — more than 31 million acres off American Samoa. Here is what that would mean for the islands.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="ocean-bg" aria-hidden="true"></div>
+  <canvas id="marine-snow" aria-hidden="true"></canvas>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
+          <circle cx="17" cy="17" r="16" fill="none" stroke="#5ef0d2" stroke-width="1.4"/>
+          <path d="M4 20c6-8 10-4 13 0s7 8 13 0" fill="none" stroke="#e0b15a" stroke-width="1.6"/>
+          <circle cx="17" cy="12" r="3" fill="#5ef0d2"/>
+        </svg>
+        Protect the Moana
+      </a>
+      <ul class="nav-links">
+        <li><a href="#what">What it is</a></li>
+        <li><a href="#samoa">American Samoa</a></li>
+        <li><a href="#science">The science</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#act">Take action</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero wrap" id="top">
+    <p class="kicker">An educational briefing · American Samoa · 2026</p>
+    <h1>Don’t mine the <em>moana</em>.</h1>
+    <p class="lede">The United States is preparing the first commercial deep-sea mining lease sale in U.S. waters — more than 31 million acres of seafloor off American Samoa. The islands have already banned this industry in their own waters. Federal leasing would still put the ocean that feeds, protects, and defines Samoan life at risk.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#samoa">See what is at stake</a>
+      <a class="btn btn-ghost" href="#act">What you can do</a>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="alert" role="status">
+      <div>
+        <strong>Proposed lease sale: November 19, 2026.</strong>
+        <p>The Marine Minerals Administration has named that date for Pacific Mineral Lease Sale 1 (PACM-1), covering two blocks totaling more than 31 million acres east of Taʻū in the Manuʻa Islands.<a class="cite" href="#s1">1</a><a class="cite" href="#s2">2</a></p>
+      </div>
+      <div class="clock" id="clock" aria-label="Countdown to the proposed lease sale">
+        <div><b id="d">0</b><span>days</span></div>
+        <div><b id="h">0</b><span>hours</span></div>
+        <div><b id="m">0</b><span>mins</span></div>
+        <div><b id="s">0</b><span>secs</span></div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>31M+</b><span>acres of Outer Continental Shelf proposed for leasing — two blocks of about 16.3 and 15.1 million acres.<a class="cite" href="#s1">1</a></span></div>
+      <div class="stat"><b>~4,500</b><span>jobs tied to tuna in a territory of about 55,000 people; StarKist’s Pago Pago cannery employs roughly 2,450 workers.<a class="cite" href="#s3">3</a></span></div>
+      <div class="stat"><b>76,000+</b><span>public comments on the first federal request for information — after which the mapped lease area was nearly doubled.<a class="cite" href="#s2">2</a><a class="cite" href="#s4">4</a></span></div>
+      <div class="stat"><b>44 years</b><span>after a small test-mining track, scientists still found persistent biological impacts on the seafloor.<a class="cite" href="#s5">5</a></span></div>
+    </div>
+  </div>
+
+  <div class="siapo wrap" aria-hidden="true"></div>
+
+  <main id="main">
+    <section class="wrap" id="what">
+      <h2>What deep-sea mining actually does</h2>
+      <p class="sub">This is not a quarry on land. It is a plan to vacuum potato-sized polymetallic nodules — rocks that take millions of years to form — from abyssal plains thousands of meters down, then pump them to a surface ship. The industry does not yet exist at commercial scale in U.S. waters.<a class="cite" href="#s2">2</a></p>
+      <div class="grid-2">
+        <div>
+          <div class="steps" id="steps" role="tablist" aria-label="How nodule mining works">
+            <button class="step active" data-step="0" aria-selected="true">
+              <small>01 · Collector</small>
+              <strong>Machines crawl the seafloor</strong>
+              <p>Collector vehicles would scrape or vacuum nodules and the thin living layer of sediment around them, destroying habitat that has been stable for millennia.</p>
+            </button>
+            <button class="step" data-step="1" aria-selected="false">
+              <small>02 · Riser</small>
+              <strong>A slurry is pumped miles upward</strong>
+              <p>Nodules, sediment, and water are lifted through a pipe to a production vessel. Depths in the proposed American Samoa blocks range from about 1,400 to 6,000 meters (4,600–20,000 feet).<a class="cite" href="#s1">1</a></p>
+            </button>
+            <button class="step" data-step="2" aria-selected="false">
+              <small>03 · Discharge</small>
+              <strong>Waste is dumped back into the water</strong>
+              <p>After nodules are separated, leftover sediment and fragments can be discharged as a plume. Midwater animals that feed on particles would encounter a cloud of low-nutrition grit that can clog feeding and respiratory surfaces.<a class="cite" href="#s6">6</a></p>
+            </button>
+            <button class="step" data-step="3" aria-selected="false">
+              <small>04 · Drift</small>
+              <strong>Noise, light, and toxins travel</strong>
+              <p>Lawyers for Faʻasao Amerika Samoa warn that sediment plumes, wastewater, residual heavy metals, noise, and light would not stay at the mine site — they can move through the water column used by whales, turtles, and tuna.<a class="cite" href="#s2">2</a></p>
+            </button>
+          </div>
+        </div>
+        <div class="viz" id="viz" aria-live="polite">
+          <svg viewBox="0 0 400 280" role="img" aria-label="Animated diagram of a mining ship, riser pipe, seafloor collector, and sediment plume">
+            <defs>
+              <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#0a4a5c"/>
+                <stop offset="1" stop-color="#041018"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="280" fill="url(#sea)"/>
+            <text x="16" y="22" fill="#b7c9c6" font-size="11">Surface</text>
+            <rect x="150" y="18" width="110" height="22" rx="4" fill="#d8e4e2"/>
+            <rect x="198" y="40" width="8" height="170" fill="#5ef0d2" opacity="0.7"/>
+            <ellipse id="plume" cx="240" cy="150" rx="18" ry="40" fill="#e07a62" opacity="0.35"/>
+            <ellipse cx="200" cy="228" rx="70" ry="10" fill="#0b2a22"/>
+            <circle cx="170" cy="226" r="5" fill="#e0b15a"/>
+            <circle cx="190" cy="230" r="4" fill="#e0b15a"/>
+            <circle cx="215" cy="224" r="5" fill="#e0b15a"/>
+            <rect x="186" y="210" width="28" height="14" rx="3" fill="#e07a62"/>
+            <text x="16" y="268" fill="#b7c9c6" font-size="11">Abyssal seafloor · nodules</text>
+          </svg>
+          <p class="caption" id="viz-caption">A collector strips nodules from the seafloor — and the life that depends on them.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:22px">
+        <h3>How deep is “deep”?</h3>
+        <p class="sub" style="margin-bottom:12px">Drag to compare everyday ocean depths with the proposed lease blocks off Taʻū.</p>
+        <div class="depth">
+          <input id="depth" type="range" min="0" max="6000" value="1400" aria-label="Ocean depth in meters">
+          <div class="depth-readout">
+            <span id="depth-label">1,400 m — shallow end of the proposed blocks</span>
+            <span>0 m → 6,000 m</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="samoa">
+      <h2>Why this is an American Samoa story</h2>
+      <p class="sub">Samoa is not a convenient patch of empty ocean. It is a living culture whose identity, food system, and private economy are bound to the moana — the ocean. Federal leasing would happen beyond the three-nautical-mile territorial sea, where Washington, not Pago Pago, holds the legal pen.<a class="cite" href="#s4">4</a><a class="cite" href="#s7">7</a></p>
+
+      <div class="quotes">
+        <blockquote>
+          “For generations, our ancestors stewarded these waters with care and restraint. Deep-seabed mining would harm the ecosystems that sustain us, endangering our measina — species sacred to the Samoan culture.”
+          <footer>— Seumalu Dr. Elora Raymond, Faʻasao Amerika Samoa<a class="cite" href="#s2">2</a></footer>
+        </blockquote>
+        <blockquote>
+          “The moana is so much more than a resource. It feeds us. It connects our islands. It carries our culture, our history, and our responsibility to those who come after us.”
+          <footer>— Dr. Sabrina Suluai-Mahuka, Finafinau, radio message to NOAA ship Okeanos Explorer, September 2026<a class="cite" href="#s3">3</a></footer>
+        </blockquote>
+      </div>
+
+      <div class="grid-2" style="margin-top:28px">
+        <article class="card">
+          <h3>Faʻa Samoa and the ocean as kin</h3>
+          <p>Faʻa Samoa — the Samoan way — organizes life around family, village, and reciprocal care. The ocean is not a warehouse of metals. It is a relative: a source of fish, ceremony, navigation memory, and protection. Community groups describe whales, turtles, and other marine life as <em>measina</em>, treasures of the culture, not surplus biomass.<a class="cite" href="#s2">2</a></p>
+          <p>When Impossible Metals, a California company, signaled interest in nodules near the territory, fishers, chiefs, faith leaders, and diaspora members organized. In July 2024, then-Governor Lemanu Peleti Mauga signed Executive Order 006-2024: a moratorium on mining, extracting, or exploring for seabed minerals in American Samoa’s own waters.<a class="cite" href="#s7">7</a><a class="cite" href="#s4">4</a></p>
+          <p>That ban still stands. It only covers about three nautical miles from shore. Beyond that line, the U.S. exclusive economic zone stretches 200 nautical miles. That is where the federal lease sale is aimed.<a class="cite" href="#s4">4</a></p>
+        </article>
+        <article class="card">
+          <h3>An economy that already lives on tuna</h3>
+          <p>Tuna fishing and canning are the backbone of the private economy. Canned tuna was about 93% of the territory’s commodity exports in 2017.<a class="cite" href="#s8">8</a> StarKist’s cannery in Pago Pago is the last remaining cannery in American Samoa. Greenpeace USA reported in September 2026 that it employs about 2,450 people and supports an estimated 4,500 jobs in a community of roughly 55,000.<a class="cite" href="#s3">3</a></p>
+          <p>Governor Pulaaliʻi Nikolao Pula has warned that untested extraction could harm that tuna-dependent economy.<a class="cite" href="#s3">3</a> Mining waste plumes would not have to reach the reef to matter. Skipjack, yellowfin, and the baitfish and mesopelagic prey they follow use the same water column that a discharge plume would cloud.<a class="cite" href="#s6">6</a></p>
+          <p>A new mineral industry is often sold as “jobs.” The lease stipulations talk about hiring locally and using the Port of Pago Pago.<a class="cite" href="#s1">1</a> Those are promises stacked against a proven industry that already feeds thousands of families — and against cultural harm that a royalty check cannot repair.</p>
+        </article>
+      </div>
+
+      <div class="card" style="margin-top:22px">
+        <h3>The lease is enormous next to the islands</h3>
+        <p>American Samoa’s land area is about 76.8 square miles.<a class="cite" href="#s8">8</a> The proposed sale is more than 31 million acres — on the order of 48,000 square miles, hundreds of times the land area of the islands, and a huge slice of the surrounding ocean. One block sits off eastern Taʻū. The area borders the Cook Islands’ EEZ and lies roughly 57 miles from Rose Atoll National Wildlife Refuge and Marine National Monument.<a class="cite" href="#s1">1</a></p>
+        <div class="scale-box" style="margin-top:18px">
+          <div>
+            <div class="island" title="American Samoa land area"></div>
+            <p style="margin-top:8px;color:var(--muted);font-size:0.85rem">Land of American Samoa (schematic)</p>
+          </div>
+          <div>
+            <div class="lease" id="lease-sq"></div>
+            <p style="margin-top:8px;color:var(--muted);font-size:0.85rem">Proposed lease acreage, drawn at a compressed visual scale. The real ratio is about 630:1.</p>
+          </div>
+        </div>
+        <p class="scale-note">The National Marine Sanctuary of American Samoa already protects 13,581 square miles of reef and open ocean, including waters at Fagatele Bay, Aunuʻu, Taʻū, Swains, and Muliāva / Rose Atoll — among the most remote sites in the U.S. sanctuary system.<a class="cite" href="#s9">9</a> Mining next door is not a separate planet. Currents, whales, and tuna do not honor lease lines.</p>
+      </div>
+    </section>
+
+    <section class="wrap" id="science">
+      <h2>What the science already shows</h2>
+      <p class="sub">Industry language calls this “preliminary.” Ecology does not. Nodules are habitat. Recovery, where it happens at all, is measured in decades to millennia — not election cycles.</p>
+      <div class="impacts">
+        <article>
+          <h3>Life in the tracks collapses</h3>
+          <p>After a 2022 industrial collector trial in the eastern Pacific that recovered more than 3,000 tonnes of nodules, scientists measured a 37% drop in sediment-dwelling animal density and a 32% drop in species richness inside the tracks, two months later.<a class="cite" href="#s10">10</a> Plume-affected communities changed which species dominated — a quieter form of biodiversity loss.</p>
+        </article>
+        <article>
+          <h3>Forty-four years is not “recovery”</h3>
+          <p>A Nature study of a decades-old test-mining track found that many biological impacts were still detectable 44 years later, even as some groups had begun to re-establish on a physically altered seafloor.<a class="cite" href="#s5">5</a> That was a tiny experiment, not a 20-year commercial lease.</p>
+        </article>
+        <article>
+          <h3>The midwater is not empty</h3>
+          <p>Discharge plumes can disrupt midwater food webs. A 2025 Nature Communications paper warned that waste particles can dilute or replace the food of filter feeders and impair predation and bioluminescent communication in the twilight zone — the same vertical world that ultimately feeds tuna.<a class="cite" href="#s6">6</a></p>
+        </article>
+        <article>
+          <h3>Protected species are in the path</h3>
+          <p>Earthjustice’s August 18, 2026 lawsuit argues that the National Marine Fisheries Service wrongly concluded leasing is “not likely to adversely affect” ESA-listed whales, sea turtles, corals, and other species. Plaintiffs say the review looked mainly at early surveys, not mining itself.<a class="cite" href="#s2">2</a></p>
+        </article>
+        <article>
+          <h3>Most of this ocean is still unknown</h3>
+          <p>NOAA has spent on the order of $20 million mapping more than 30,000 square nautical miles and confirming nodules are present.<a class="cite" href="#s1">1</a> Mapping metals is not the same as understanding ecosystems. Community leaders have said they welcome science that protects the deep — not science whose purpose is to locate ore.<a class="cite" href="#s3">3</a></p>
+        </article>
+        <article>
+          <h3>The Pacific has said no before</h3>
+          <p>Fiji, Palau, Samoa, Tuvalu, Vanuatu, Kanaky (New Caledonia), and the Federated States of Micronesia have called for moratoriums. Māʻohi Nui (French Polynesia) and Hawaiʻi have banned seabed mining in their own waters.<a class="cite" href="#s3">3</a> American Samoa’s local ban is part of that Pacific stand, not an isolated preference.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="timeline">
+      <h2>How we got here</h2>
+      <p class="sub">A local moratorium. A federal override. A lawsuit. A ship in the harbor. This is not a hypothetical from a distant decade.</p>
+      <div class="timeline">
+        <div class="tl"><time>July 24, 2024</time><p>Governor Lemanu Peleti Mauga signs EO 006-2024, a moratorium on seabed mineral exploration and extraction in territorial waters, citing irreversible risks to biodiversity and communities.<a class="cite" href="#s7">7</a></p></div>
+        <div class="tl"><time>2025</time><p>Impossible Metals files an unsolicited lease request. President Trump’s 2025 executive orders push faster access to offshore critical minerals. The Metals Company USA also files NOAA applications for high-seas nodules under a separate U.S. statute — a parallel track, not the American Samoa OCS sale.<a class="cite" href="#s1">1</a><a class="cite" href="#s11">11</a></p></div>
+        <div class="tl"><time>2025–2026</time><p>BOEM / the Marine Minerals Administration issues a Request for Information. More than 76,000 comments arrive, overwhelmingly against leasing. The identified area is then expanded from about 18 million acres toward 33 million, with more than 31 million acres later offered in two sale blocks.<a class="cite" href="#s2">2</a><a class="cite" href="#s4">4</a></p></div>
+        <div class="tl"><time>July 17, 2026</time><p>Proposed Leasing Notice for PACM-1: sale date November 19, 2026; auction in Camarillo, California; $3 million minimum bid per block; 20-year leases; royalties of 2% then 5%.<a class="cite" href="#s1">1</a><a class="cite" href="#s2">2</a></p></div>
+        <div class="tl"><time>August 18, 2026</time><p>Faʻasao Amerika Samoa and Conservation Council for Hawaiʻi, represented by Earthjustice, sue NMFS in the District of Hawaiʻi over the Endangered Species Act consultation.<a class="cite" href="#s2">2</a></p></div>
+        <div class="tl"><time>September 2, 2026</time><p>Finafinau, community leaders, and Greenpeace USA meet NOAA’s <em>Okeanos Explorer</em> in Pago Pago Harbor with “Don’t Mine the Moana” banners, objecting to mineral-mapping work tied to a leasing agenda.<a class="cite" href="#s3">3</a></p></div>
+      </div>
+    </section>
+
+    <section class="wrap" id="quiz">
+      <h2>Test what you just learned</h2>
+      <p class="sub">Five questions. No scoreboard of shame — just a way to keep the facts straight when the talking points get slippery.</p>
+      <div class="quiz">
+        <p id="q-progress" style="color:var(--gold);font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase">Question 1 of 5</p>
+        <div id="quiz-root"></div>
+        <p class="feedback" id="q-feedback"></p>
+        <div class="quiz-nav">
+          <button class="btn btn-ghost" id="q-next" type="button">Next question</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="act">
+      <h2>What you can do</h2>
+      <p class="sub">American Samoa cannot out-lobby a federal mineral rush alone. Amplify local organizations, follow the court case, and treat “it’s only exploration” with the skepticism community leaders have asked for.</p>
+      <div class="actions">
+        <a class="card" href="https://earthjustice.org/press/2026/lawsuit-targets-first-deep-sea-mining-lease-sale-in-us-waters" target="_blank" rel="noopener">
+          <h3>Follow the lawsuit</h3>
+          <p>Read Earthjustice’s case for Faʻasao Amerika Samoa and Conservation Council for Hawaiʻi, and share primary reporting instead of rumors.</p>
+        </a>
+        <a class="card" href="https://www.greenpeace.org/usa/dont-mine-the-moana-american-samoa-rejects-deep-sea-mining-push/" target="_blank" rel="noopener">
+          <h3>Listen to Finafinau</h3>
+          <p>Dr. Sabrina Suluai-Mahuka’s message to the Okeanos Explorer is a clear statement of welcome-for-science, rejection-of-extraction.</p>
+        </a>
+        <a class="card" href="https://www.samoanews.com/local-news/governor-signs-order-implementing-moratorium-deep-seabed-mining" target="_blank" rel="noopener">
+          <h3>Cite the moratorium</h3>
+          <p>EO 006-2024 is public record. When someone says the islands have not taken a position, point to the order.</p>
+        </a>
+      </div>
+      <p class="scale-note" style="margin-top:22px">This site is independent educational material. It is not a legal filing, not affiliated with the American Samoa Government, and not a substitute for advice from the organizations named above.</p>
+    </section>
+
+    <section class="wrap sources" id="sources">
+      <h2>Sources</h2>
+      <p class="sub">Every major claim on this page is tied to reporting, court records, government documents, or peer-reviewed science. Links open the original materials.</p>
+      <ol>
+        <li id="s1">Beaubouef, Bruce. “US advances first deep-sea mining lease sale off American Samoa.” <em>Offshore Magazine</em>, 2026. <a href="https://www.offshore-mag.com/special-reports/news/55399989/us-advances-first-deep-sea-mining-lease-sale-off-american-samoa">offshore-mag.com</a></li>
+        <li id="s2">Earthjustice. “Lawsuit Targets First Deep-Sea Mining Lease Sale in U.S. Waters.” Press release, August 18, 2026; complaint, <em>Faʻasao Amerika Samoa v. NMFS</em>, D. Haw. <a href="https://earthjustice.org/press/2026/lawsuit-targets-first-deep-sea-mining-lease-sale-in-us-waters">earthjustice.org</a> · <a href="https://earthjustice.org/wp-content/uploads/2026/08/2026-8-18-complaint-dsm-american-samoa.pdf">complaint PDF</a></li>
+        <li id="s3">Brooks, Tanya. “Don’t Mine the Moana: American Samoa rejects deep sea mining push.” Greenpeace USA, September 3, 2026. <a href="https://www.greenpeace.org/usa/dont-mine-the-moana-american-samoa-rejects-deep-sea-mining-push/">greenpeace.org/usa</a></li>
+        <li id="s4">Inside Climate News. “Trump Explores Deep Sea Mining in American Samoa,” March 11, 2026. <a href="https://insideclimatenews.org/news/11032026/trump-noaa-american-samoa-deep-sea-mining/">insideclimatenews.org</a></li>
+        <li id="s5">Jones, Daniel O. B., et al. “Long-term impact and biological recovery in a deep-sea mining track.” <em>Nature</em>, 2025. <a href="https://www.nature.com/articles/s41586-025-08921-3">doi / Nature</a></li>
+        <li id="s6">“Deep-sea mining discharge can disrupt midwater food webs.” <em>Nature Communications</em>, 2025. <a href="https://www.nature.com/articles/s41467-025-65411-w">nature.com/articles/s41467-025-65411-w</a></li>
+        <li id="s7">Samoa News staff. “Governor signs order implementing moratorium on deep seabed mining.” <em>Samoa News</em>, July 2024 (EO 006-2024). <a href="https://www.samoanews.com/local-news/governor-signs-order-implementing-moratorium-deep-seabed-mining">samoanews.com</a></li>
+        <li id="s8">NOAA Office of National Marine Sanctuaries. <em>National Marine Sanctuary of American Samoa Community Profile, 2010–2019</em> (land area; tuna as ~93% of 2017 commodity exports, citing CIA). <a href="https://repository.library.noaa.gov/view/noaa/55671">NOAA Institutional Repository</a></li>
+        <li id="s9">NOAA. “About the sanctuary,” National Marine Sanctuary of American Samoa (13,581 square miles; six units). <a href="https://americansamoa.noaa.gov/about/">americansamoa.noaa.gov/about</a></li>
+        <li id="s10">“Impacts of an industrial deep-sea mining trial on macrofaunal biodiversity.” <em>Nature Ecology &amp; Evolution</em>, 2025 (37% density / 32% richness declines in tracks). <a href="https://www.nature.com/articles/s41559-025-02911-4">nature.com/articles/s41559-025-02911-4</a></li>
+        <li id="s11">NOAA National Ocean Service. “Deep Seabed Hard Minerals Mining” (DSHMRA applications, including The Metals Company USA; distinct from the Interior Department OCS lease sale). <a href="https://oceanservice.noaa.gov/deep-seabed-mineral-resources/deep-seabed-mining/">oceanservice.noaa.gov</a></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>Faʻafetai for reading. Built as a public explainer so the proposed sale off American Samoa is harder to treat as a footnote.</p>
+      <p style="margin-top:8px">Independent educational site · Citations current as of September 2026 · Not legal advice</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
